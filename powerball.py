@@ -24,7 +24,7 @@ try:
 		for n in range(len(currentNumbers)-1):
 			if currentNumbers[n] in winningNumbers:
 				numbersMatched = numbersMatched + 1
-		if currentNumbers[len(currentNumbers)-1] == powerball:
+		if int(currentNumbers[len(currentNumbers)-1]) == powerball:
 			powerballMatched = "MATCHED"
 		else:
 			powerballMatched = "NOT MATCHED"
